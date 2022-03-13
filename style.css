@@ -1,0 +1,302 @@
+@font-face {
+    font-family: "Mistral";
+    src:url("/MISTRAL.TTF")  format('truetype');
+}
+
+
+
+body {
+    /* background-color: #171326 !important; */
+    background-color: black !important;
+    color: white !important;
+}
+
+.header-container {
+    /* background-image: url("images/SCALING_NETS_2880x1620_Lede.svg"); */
+    /* background-size: cover; */
+}
+
+.header {
+    width: 70%;
+    margin: auto;
+}
+
+.header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 13vw;
+    text-decoration: none;
+    color: white;
+}
+
+.header-logo:hover {
+    color: white;
+}
+
+.header-subtext {
+    font-family: "Mistral";
+    font-size: 2.5vw;
+}
+
+.menu-item {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.menu-item-span {
+    padding: 8px 0px 8px 0px !important;
+    border-top: 2px solid grey;
+    border-right: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+.menu-item-span:last-child {
+    border-right: 0px;
+}
+
+.menu-item-span:after {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-bottom: -8px;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.menu-item-span:hover:after {
+    width: 100%;
+    background: #3f3469;
+}
+
+.menu-item-span:hover {
+    background-color: #e3dff0;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.menu-item-span:hover .menu-item{
+    color: black;
+}
+
+/* Cards */
+
+.card-container {
+    position: relative;
+}
+
+.card {
+    background-color: #171326 !important;
+    color: white !important;
+    padding: 0px !important;
+    border-radius: 3px !important;
+    width: 98% !important;
+    height: 99% !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow:hidden;
+    margin: auto;
+    transform-style: preserve-3d;
+	-webkit-transition:  100ms ease-out; 
+       -moz-transition:  100ms ease-out; 
+         -o-transition:  100ms ease-out; 
+            transition:  100ms ease-out;
+}
+
+.card-large {
+    max-height: 700px;
+}
+
+.card-small {
+    max-height: 350px;
+}
+
+.card-slim {
+    width: 98% !important;
+    max-height: 300px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.borderless-card {
+    padding: 0px !important;
+    border-radius: 3px !important;
+    width: 98% !important;
+    height: 99% !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow:hidden;
+    margin: auto;
+    transform-style: preserve-3d;
+	-webkit-transition:  100ms ease-out; 
+       -moz-transition:  100ms ease-out; 
+         -o-transition:  100ms ease-out; 
+            transition:  100ms ease-out;
+    box-shadow: none !important;
+}
+
+.card-featured-tag {
+    font-size:1vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* background-color: White;
+    color: Black; */
+    background-color: #171326 !important;
+    color: white !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .card-featured-tag {
+        font-size:1.5vw;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    .card-featured-tag {
+        font-size:3.2vw;
+    }
+}
+
+.card-image {
+    object-fit: cover;
+    max-height: 700px;
+}
+
+.card-slim-image{
+    max-width: 100%;
+    white-space: nowrap;
+    object-fit: cover;
+    max-height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    padding-left: 0px !important;
+}
+
+
+.card-borderless-image
+{
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.card-trending-tag {
+    font-size:1vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: White;
+    color: Black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.video-play-icon{
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    max-width: 50px;
+}
+
+.video-overlay {
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 0px;
+    width: 25%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.marginless-link:hover .video-overlay {
+    display:block;
+}
+
+.card-details-slim {
+    width: 75%;
+    min-width: 55%;
+    max-width: 75%;
+    white-space: nowrap;
+    margin: auto;
+    position: relative;
+    background-color: #171326;;
+}
+
+.borderless-card .card-details-slim{
+    width: 100%;
+    max-width: 100%;
+}
+
+.card:hover{
+	width:100% !important;
+	height:100% !important;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+	-webkit-transition:  100ms ease-out; 
+       -moz-transition:  100ms ease-out; 
+         -o-transition:  100ms ease-out; 
+            transition:  100ms ease-out; 
+}
+
+.borderless-card:hover{
+    width:100% !important;
+	height:100% !important;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+	-webkit-transition:  100ms ease-out; 
+       -moz-transition:  100ms ease-out; 
+         -o-transition:  100ms ease-out; 
+            transition:  100ms ease-out; 
+}
+
+.card-details {
+    min-height: 70px;
+    height: 5%;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    background-color: #171326 !important;
+    border-radius: 3px 3px 0px 0px !important;
+    box-shadow: 0 -4px 2px rgb(255, 255, 255);
+    bottom: 0px;
+    -webkit-transition: all 200ms ease-out; 
+       -moz-transition: all 200ms ease-out; 
+         -o-transition: all 200ms ease-out; 
+            transition: all 200ms ease-out; 
+}
+
+.card-summary {
+    white-space: normal;
+}
+
+#card:hover .card-details{
+    min-height: 200px;
+    height: 40%;
+	-webkit-transition: all 200ms ease-out; 
+       -moz-transition: all 200ms ease-out; 
+         -o-transition: all 200ms ease-out; 
+            transition: all 200ms ease-out; 
+}
+
+.linebreak-heading {
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.linebreak-heading:before, .linebreak-heading:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+
+.linebreak-heading:before {
+    margin-right: 10px
+}
+
+.linebreak-heading:after {
+    margin-left: 10px
+  }
